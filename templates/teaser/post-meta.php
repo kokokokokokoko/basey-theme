@@ -2,7 +2,7 @@
 	<?php wp_link_pages(); ?>
 	<a class="uk-button" href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php _e('Continue Reading', 'basey'); ?></a>
 	<?php if (comments_open()) : ?>
-		<button class="uk-button"><?php comments_popup_link(__('No Comments', 'basey'), __('1 Comment', 'basey'), __('% Comments', 'basey'), '', ''); ?></button>
+		<?php comments_popup_link(__('<button class="uk-button">No Comments</button>', 'basey'), __('<button class="uk-button">1 Comment</button>', 'basey'), __('<button class="uk-button">% Comments</button>', 'basey'), '', ''); ?>
 	<?php endif; ?>
 	<p class="uk-article-meta">
 		<?php
