@@ -1,3 +1,8 @@
+# kokokokokoko version:
+
+Minor changes here and there for my own use-case.
+Original: https://github.com/zslabs/basey-theme
+
 # Basey
 
 Basey is a developer-friendly WordPress base (or parent) theme built with [UIkit](https://github.com/uikit/uikit) and [GulpJS](http://gulpjs.com).
