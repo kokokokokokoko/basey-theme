@@ -45,9 +45,13 @@ add_action( 'basey_head', 'basey_head_output' );
  */
 function basey_content_before_output() { ?>
 	<section class="uk-margin">
-		<div class="uk-container">
+		<div class="uk-container" style="min-height:100vh">
 			<div class="uk-grid" data-uk-grid-margin>
-				<div class="uk-width-medium-7-10">
+			<?php if(get_post_type( get_the_ID() ) == 'post'){
+				echo '<div class="uk-width-medium-8-10">';
+			}else{
+				echo '<div class="uk-width-medium-1-1">';
+			}?>
 			<?php
 }
 add_action( 'basey_content_before', 'basey_content_before_output' );
@@ -59,11 +63,13 @@ add_action( 'basey_content_before', 'basey_content_before_output' );
 function basey_content_after_output() { ?>
 
 				</div>
-				<div class="uk-width-medium-3-10">
+				<?php if(get_post_type( get_the_ID() ) == 'post'){?>
+				<div class="uk-width-medium-2-10">
 					<div class="uk-panel uk-panel-box">
 						<?php dynamic_sidebar( 'basey-sidebar' ); ?>
 					</div>
 				</div>
+				<?php }?>
 			</div>
 		</div>
 	</section>
