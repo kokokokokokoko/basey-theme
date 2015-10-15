@@ -2,7 +2,7 @@
 	<?php do_action( 'basey_post_inside_before' ); ?>
 
 	<header>
-		<h3><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h3 class="zz-link-muted uk-text-bold"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
 	</header>
 	<?php
 
