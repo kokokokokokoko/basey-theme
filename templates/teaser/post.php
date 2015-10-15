@@ -1,7 +1,7 @@
 <article <?php post_class('uk-article uk-grid uk-grid-match') ?> id="post-<?php the_ID(); ?>" data-uk-grid-match="{target:'.zz-content'}" data-uk-grid-margin>
 	<?php do_action( 'basey_post_inside_before' ); ?>
 
-	<div class="uk-width-3-10">
+	<div class="uk-width-small-1-1 uk-width-medium-3-10">
 		<header>
 			<?php
 
@@ -18,7 +18,7 @@
 		</header>
 	</div>
 	<?php
-	echo '<div class="zz-content uk-width-7-10"><div class="entry-content">';
+	echo '<div class="zz-content uk-width-small-1-1  uk-width-medium-7-10"><div class="entry-content">';
 	echo '<h3 class="zz-link-muted uk-text-bold"><a href="'.get_permalink().'">'.get_the_title().'</i></a></h3>';
 		if (has_excerpt()) {
 			the_excerpt();
