@@ -6,6 +6,9 @@
 
 	<header>
 		<h2 class="uk-article-title"><?php the_title(); ?></h2>
+		<?php if (has_post_thumbnail()){
+			the_post_thumbnail('full', array('class' => 'uk-margin-small-bottom uk-align-center uk-width-1-1', 'itemprop'=>'image')); 
+		} ?>
 	</header>
 	<div class="entry-content">
 		<?php the_content(); ?>
