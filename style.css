@@ -6,7 +6,13 @@ Version:         8.0.0
 Author:          Zach Schnackel
 Author URI:      http://zslabs.com
 */
-/* custom styles */
+
 .zz-link-muted a,.zz-link-muted a:visited,.zz-link-muted a:hover,.zz-link-muted a:active{
-	color:#989898;
+	color:#444;
+}
+.zz-link-more-muted a,.zz-link-more-muted a:visited,.zz-link-more-muted a:hover,.zz-link-more-muted a:active{
+	color:#777;
+}
+.zz-text-more-muted{
+	color:#777;
 }
