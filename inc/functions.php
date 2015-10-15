@@ -43,7 +43,7 @@ function basey_breadcrumbs() {
 
 	if (!is_home() && !is_front_page()) {
 
-		$output = '<ul class="uk-breadcrumb uk-hidden-small">';
+		$output = '<ul class="zz-link-more-muted zz-text-more-muted zz-position-up uk-breadcrumb uk-hidden-small">';
 
 		$output .= '<li><a href="'.get_option('home').'">Home</a></li>';
 
