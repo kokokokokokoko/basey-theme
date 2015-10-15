@@ -48,7 +48,7 @@ function basey_content_before_output() { ?>
 		<div class="uk-container" style="min-height:100vh">
 			<div class="uk-grid" data-uk-grid-margin>
 			<?php if(get_post_type( get_the_ID() ) == 'post'){
-				echo '<div class="uk-width-medium-8-10">';
+				echo '<div class="uk-width-medium-7-10">';
 			}else{
 				echo '<div class="uk-width-medium-1-1">';
 			}?>
@@ -64,7 +64,7 @@ function basey_content_after_output() { ?>
 
 				</div>
 				<?php if(get_post_type( get_the_ID() ) == 'post'){?>
-				<div class="uk-width-medium-2-10">
+				<div class="uk-width-medium-3-10">
 					<div class="uk-panel uk-panel-box">
 						<?php dynamic_sidebar( 'basey-sidebar' ); ?>
 					</div>
