@@ -4,12 +4,13 @@
 	<div class="uk-width-small-1-1 uk-width-medium-3-10">
 		<header>
 			<?php
+			echo '<h3 class="zz-link-muted uk-text-bold uk-hidden-medium uk-hidden-large"><a href="'.get_permalink().'">'.get_the_title().'</i></a></h3>';
 
 			if (has_post_thumbnail()) {
 				$width = get_option('thumbnail_size_w');
 				$height = get_option('thumbnail_size_h');
 			?>
-			<figure class="">
+			<figure class="uk-margin-small-top uk-margin-bottom-remove uk-padding-remove">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 					<?php the_post_thumbnail(array($width, $height), array('class' => '')); ?>
 				</a>
@@ -19,7 +20,7 @@
 	</div>
 	<?php
 	echo '<div class="zz-content uk-width-small-1-1  uk-width-medium-7-10"><div class="entry-content">';
-	echo '<h3 class="zz-link-muted uk-text-bold"><a href="'.get_permalink().'">'.get_the_title().'</i></a></h3>';
+	echo '<h3 class="zz-link-muted uk-text-bold uk-hidden-small"><a href="'.get_permalink().'">'.get_the_title().'</i></a></h3>';
 		if (has_excerpt()) {
 			the_excerpt();
 		}
