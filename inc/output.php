@@ -18,7 +18,7 @@ logic)
 function basey_head_output() { ?>
 	<nav class="uk-navbar uk-navbar-attached">
 		<div class="uk-container">
-			<a class="uk-navbar-brand" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+			<a class="uk-navbar-brand" href="<?php echo home_url(); ?>" style="position:relative;top:3px;"><?php bloginfo('name'); ?></a>
 			<?php
 			wp_nav_menu( array(
 				'menu'              => 'primary',
