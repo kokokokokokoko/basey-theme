@@ -6,7 +6,7 @@
 		//do_action( 'basey_debug' );
 		?>
 		<div class="uk-width-1-1">
-			<p class="uk-text-center bottom-txt">
+			<p class="uk-text-center bottom-txt uk-text-small zz-text-more-muted">
 				Copyright <?php echo date(Y); ?> <?php bloginfo('name'); ?>
 			</p>
 		</div>
